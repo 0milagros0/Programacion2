@@ -1,0 +1,100 @@
+EJERCICIO
+int numeros[5] = {3, 7, 9, 1, 4};
+int buscado = 9;
+
+//las posiciones empiezan desde 0 en C
+resultado: imprime posicion 2 
+
+EJERCICIO
+#include <stdio.h>
+void agregarFinal(int arr[], int valor, int size) {
+    arr[size - 1] = valor;
+}
+int main() {
+    int valores[4] = {1, 2, 3, 4};
+    agregarFinal(valores, 99, 4);
+    printf("%d\n", valores[3]);
+    return 0;
+}
+resultado:99
+
+EJERCICIO
+int datos[] = {1, 4, 6, 8};
+for (int i = 0; i < 4; i++) {
+    if (datos[i] > 5) {
+        datos[i] = 0;
+    }
+}
+        
+¿Qué valor tendrá datos[2] después de ejecutar el programa?
+datos[0]= 1 → no es mayor que 5 → queda igual
+datos[1]=4 → no es mayor que 5 → queda igual
+datos[2]=6 → sí es mayor que 5 → se cambia a 0
+datos[3]=8 → sí es mayor que 5 → se cambia a 0
+resultado:0 
+
+EJERCICIO
+int main() {
+   int mat[2][3] = {
+                 {1, 2, 3},
+                 {4, 5, 6}
+     };
+     for (int i = 0; i < 2; i++) {
+         for (int j = 0; j < 3; j++) {
+               printf("%d ", mat[i][j]);
+         }
+   }
+     return 0;
+}
+¿Cuál será la salida?
+//al termminar el segundo for,empieza el primero otra vez y "reinicia" j=0
+resultado:1 2 3 4 5 6
+
+EJERCICIO
+#include <stdio.h>
+void modificar( int x) {
+x = 20;
+}
+int main() {
+    int a = 10;
+   modificar( a);
+    printf("Resultado: %d\n", a);
+    return 0;
+}
+resultado:10,se modifica solo x,a no cambia.
+
+EJERCICIO
+int datos[] = {1, 2, 3, 4, 5};
+for (int i = 0; i < 5; i++) {
+    if (datos[i] % 2 == 0) {
+        datos[i] = datos[i] * 10;
+    }
+}
+printf("%d", datos[1]);
+resultado:20
+
+La búsqueda de un elemento en un arreglo consiste en: 
+Recorrer el arreglo a fin de encontrar el valor buscado
+
+Un arreglo es “un conjunto finito ordenado de elementos homogéneos”.
+Ordenado:entendemos que los elementos están dispuestos de tal manera que hay un elemento cero, un elemento primero, un segundo
+Homogeneo:entendemos que todos los elementos del arreglo son del mismo tipo.
+Finito:entendemos que hay un número especifico de elementos en el arreglo; número que debe ser grande o pequeño
+
+Una cadena no se puede ordenar aplicando cualquier método de ordenamiento que se utiliza para ordenar un arreglo:verdadero
+
+Establecer la relación entre la función y su significado:
+strcmp(): compara una cadena con otra;
+strchcr(): localiza primera instancia de un caracter dentro de un string;
+islower(caracter): devuelve cierto si caracter es una letra minúscula, y falso en caso contrario
+
+Que proposición  no esta asociada con arreglos
+b. char <identificador> [<longitud máxima>];
+
+
+
+
+
+
+
+

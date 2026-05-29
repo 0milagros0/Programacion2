@@ -73,6 +73,18 @@ for (int i = 0; i < 5; i++) {
 printf("%d", datos[1]);
 resultado:20
 
+DATOS:
+sizeof:sirve para saber cuanto espacio ocupa una variable o un tipo de dato en la memoria.
+general:
+char: 1
+int: 4
+float:4
+double:8
+sizeof(arreglo[0]): tamaño de elemento
+sizeof(arreglo):dependiendo el tipo,se multiplica por la cantidad de elementos.
+ej: int arreglo[5] seria 5(elementos)*4(tipo int)=20 bytes
+
+CONCEPTOS
 La búsqueda de un elemento en un arreglo consiste en: 
 Recorrer el arreglo a fin de encontrar el valor buscado
 

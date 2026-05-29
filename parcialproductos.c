@@ -2,7 +2,7 @@
 #include <string.h>
 #define MAX_PRODUCTOS 1000
 
-/** Definir al Estructura de los datos */
+/** Definir al Estructura de los datos*/
 struct Producto
 {
   int nroProducto;

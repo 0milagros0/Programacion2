@@ -1,0 +1,31 @@
+arbol binario de búsqueda
+Los árboles son considerados las estructuras de datos no 
+lineales y dinámicas de datos muy importantes del área de 
+computación.
+• Un árbol binario de búsqueda es aquel que tiene sus nodos con un orden
+definido, de tal manera que los datos del subárbol izquierdo son menores y los
+del subárbol derecho son mayores.
+• Estosárboles tienen como particularidad de que se puedan realizar búsquedas
+de nodos o datos determinados, utilizando el método de búsqueda binaria de
+manera similar al usado en arreglos.
+• Para crear un árbol binario de búsqueda a partir un listado de datos, asuma
+que el primer dato es la raíz del árbol; los demás se ubican en el árbol así: los
+menores como hijos izquierdos y los mayores como hijos derechos
+
+Recorrido INORDEN. Este recorrido se realiza así: primero recorre el
+subárbol izquierdo, segundo visita la raíz y por último, va al subárbol
+derecho.
+En síntesis: hijo izquierdo — raíz — hijo derecho
+Recorrido PREORDEN. Este recorrido se realiza así: primero visita la raíz;
+segundo recorre el subárbol izquierdo y por último va a subárbol derecho.
+En síntesis: raíz — hijo izquierdo — hijo derecho
+Recorrido POSORDEN. Primero recorre el subárbol izquierdo; segundo,
+recorre el subárbol derecho y por último, visita la raíz.
+En síntesis: hijo izquierdo– hijo derecho — raíz
+
+Estructuras lineales
+Arreglos,Registros,Pilas,Colas,Listas
+Estructuras no lineales
+Árboles,Gráficas
+Estructuras dinámicas
+listas,arbpoles

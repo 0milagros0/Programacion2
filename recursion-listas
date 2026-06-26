@@ -1,0 +1,18 @@
+Se dice que una función es recursiva cuando se llama a si misma. 
+El lenguaje C permite que una función pueda llamarse a sí misma. A esta característica se le denomina recursividad.
+
+Comparación Iteración- Recursión 
+• Tanto la iteración como la recursión se basan en una estructura de control: la iteración utiliza una estructura de repetición, 
+la recursión utiliza una estructura de selección. 
+• Tanto la iteración como la recursión implican repetición:
+la iteración utiliza la estructura de repetición en forma explicita, la recursión consigue la repetición mediante llamadas de función repetidas. 
+• La iteración y la recursión ambas involucran una prueba de terminación: 
+la iteración termina cuando falla la condición de continuación del ciclo, la recursión termina cuando se reconoce un caso base. La recursión tiene muchas negativas. 
+• La sobrecarga de llamadas de la función puede resultar costoso tanto en tiempo de procesador como en espacio de memoria.
+• Cada llamada recursiva genera otra copia de la función, esto puede consumir gran cantidad de memoria.
+• La iteración por lo regular ocurre dentro de una función por lo que no ocurre la sobrecarga de llamadas repetidas de función y asignación extra de memoria.
+
+LISTAS
+es una estructura de datos dinamica que se compone de un conjunto de nodos en secuencia enlazados mediante dos apuntadores(uno hacia adelante y otro hacia atras)
+osea PRIM y ULT
+la lista doble tiene un apuntador inicial y uno final,elprimero y el ultimo apuntan al nulo

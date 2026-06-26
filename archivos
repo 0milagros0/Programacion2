@@ -1,0 +1,91 @@
+Trabajo Práctico de Investigación: Archivos 
+Apellido y nombre:Gonzalez Ortiz Milagros Anahi 
+Comision:Tarde 
+Ejercicio N°1: Definir los siguientes conceptos  
+• Archivo: Un archivo es una forma de guardar información en disco para que siga 
+existiendo después de que el programa termine. 
+• Mezcla de Archivos: Técnica que consiste en unir dos o más archivos ordenados en un 
+único archivo, conservando el orden de los registros. 
+• Apareo de Archivos: Proceso mediante el cual se leen simultáneamente dos archivos 
+ordenados por la misma clave para comparar sus registros y realizar operaciones como 
+búsquedas, actualizaciones o generación de nuevos archivos. 
+• Corte de Control: Técnica utilizada para procesar archivos ordenados por una clave. 
+Ejercicio N°2: Describir las siguientes operaciones  
+• Mezcla de Archivos:  Se abren dos o más archivos ordenados y se comparan sus 
+registros, en cada paso se copia al archivo destino el registro con la menor clave hasta que 
+todos los archivos hayan sido procesados. 
+• Apareo de Archivos: Se leen simultáneamente dos archivos ordenados por la misma clave. 
+Los registros se comparan y se avanza en uno o ambos archivos según el resultado para 
+encontrar coincidencias o diferencias. 
+• Corte de Control: Se recorre un archivo ordenado por una clave determinada, mientras la 
+clave no cambie se acumula información pero cuando la clave cambia se procesan o 
+muestran los resultados acumulados y se comienza un nuevo grupo. 
+Ejercicio N°3:  
+• ¿Qué diferencia hay entre un arreglo y un archivo?  
+El arreglo es una estructura de datos que almacena elementos en la memoria RAM, por lo 
+que su contenido se pierde al finalizar la ejecución del programa,en cambio,el archivo es un 
+conjunto de datos almacenados en un dispositivo de almacenamiento por lo que la 
+información permanece guardada aunque el programa termine. 
+. 
+• ¿Qué diferencia hay entre mezcla y apareo?  
+La mezcla consiste en unir dos o más archivos ordenados para formar un nuevo archivo, 
+manteniendo el orden de los registros y el apareo consiste en leer y comparar 
+simultáneamente dos archivos ordenados por la misma clave para encontrar coincidencias, 
+diferencias o realizar actualizaciones. 
+• ¿Cómo se clasifican los archivos según el método de acceso?  
+Acceso secuencial: Los registros se leen uno tras otro, desde el principio hasta el final. 
+Acceso directo o aleatorio: Permiten acceder directamente a un registro sin necesidad de 
+recorrer los anteriores. 
+• ¿Cómo se clasifican los archivos según el tipo de contenido?  
+Archivos de texto y Archivos binarios. 
+• ¿Qué diferencia hay entre un archivo de texto y un archivo binario? 
+El archivo de texto almacena la información como caracteres (ASCII o UTF). Puede abrirse 
+y leerse con un editor de texto como el Bloc de notas y el archivo binario almacena los datos 
+en el mismo formato en el que se encuentran en la memoria, no puede leerse con un editor 
+de texto. 
+• ¿Por qué no se puede abrir un archivo?  
+Puede ser por que el archivo no existe, la ruta o el nombre son incorrectos, no se tienen 
+permisos para acceder al archivo o  está siendo utilizado por otro programa. 
+• ¿Por qué es necesario cerrar los archivos al final del proceso? 
+Es necesario para guardar correctamente los datos pendientes de escritura y así evitar la 
+pérdida de información,además se liberan los recursos y la memoria utilizados y el archivo 
+queda disponible para ser usado por otros programas. 
+Ejercicio N°3.1: Indique en C las instrucciones para realizar las siguientes operaciones  
+1. ¿Qué significa este tipo de apertura?  
+• r: abrir un archivo para leer 
+• w: abrir un archivo para escribir 
+• a: abrir un archivo para agregar al final 
+• r+: Abrir un archivo para lectura y escritura 
+• w+: Abrir un archivo para lectura y escritura 
+• a+: Abrir un archivo para lectura y escritura, agregando los nuevos datos al final 
+• rb: Abrir un archivo binario para lectura 
+• wb: Abrir un archivo binario para escritura 
+• ab: Abrir un archivo binario para agregar datos al final 
+• r+b: Abrir un archivo binario para lectura y escritura 
+• w+b: Abrir un archivo binario para lectura y escritura. 
+• a+b: Abrir un archivo binario para lectura y escritura, agregando los datos nuevos al final 
+2. ¿Qué significa lo siguiente?  
+a. t: modo texto: Significa que los datos se almacenan como caracteres y pueden leerse con 
+un editor de texto (como el Bloc de notas).  
+b. b: modo binario: Significa que los datos se leen y escriben exactamente como están 
+almacenados en memoria, sin realizar conversiones de caracteres. 
+3. Indicar para que se usan las siguientes funciones 
+fopen(): Abre un archivo y devuelve un puntero de tipo FILE. 
+fclose(): Cierra un archivo que fue abierto previamente. 
+fgets(): Lee una cadena de caracteres (una línea) desde un archivo. 
+fputs(): Escribe una cadena de caracteres en un archivo. 
+fseek():Desplaza el puntero de lectura/escritura a una posición específica dentro del archivo. 
+fprintf() : Escribe datos con formato en un archivo. 
+fscanf(): Lee datos con formato desde un archivo. 
+feof(): Verifica si se alcanzó el final del archivo. 
+ferror(): Detecta si ocurrió un error durante una operación sobre el archivo. 
+rewind(): Lleva el puntero al comienzo del archivo. 
+remove(): Elimina un archivo del disco. 
+fflush(): Fuerza la escritura de los datos pendientes en el archivo o limpia el búfer de salida.
+ ¿Qué significa “FILE *nombrearchivo”?  
+Es declarar una variable puntero a un archivo. 
+ ¿Qué tipo de apertura tienen los siguientes archivos?  
+FILE * datosdatos = fopen (“nombres.dat”,”r”); LECTURA 
+datos = fopen (“nombres.dat”, “w”); ESCRITURA 
+datos = fopen (“nombres.dat”, “a”); AGREGA AL FINAL 
+datos = fopen (“nombres.dat”, “ra”); NO VALIDO 
